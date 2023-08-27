@@ -1,0 +1,22 @@
+#alex-notification {
+  min-width: 320px;
+  max-width: 720px;
+
+  padding: 1rem 2rem;
+  background: lightgreen;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  translate: -50%;
+
+  z-index: 1000;
+}
+
+.hiding {
+  opacity: 0;
+  transition: opacity 1s;
+}

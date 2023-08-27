@@ -1,0 +1,32 @@
+{
+  "name": "Alex stuffs",
+  "description": "My random stuffs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.icons8.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "css": [
+        "index.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "19": "icons/19.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
